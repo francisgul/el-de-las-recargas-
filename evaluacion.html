@@ -35,7 +35,7 @@
       font-weight: bold;
     }
 
-    .hero {
+    .encabezado {
       background: url('imagenes/seth0s-dome-664000_1920.jpg') no-repeat center center/cover;
       height: 70vh;
       display: flex;
@@ -46,8 +46,8 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
       text-align: center;
     }
-    .hero h1 { font-size: 3rem; }
-    .hero button {
+    .encabezado h1 { font-size: 3rem; }
+    .encabezado button {
       margin-top: 1rem;
       padding: 0.8rem 1.5rem;
       background: #42a5f5;
@@ -58,17 +58,17 @@
       border-radius: 5px;
     }
 
-    .section {
+    .seccion {
       padding: 2rem;
       text-align: center;
     }
-    .cards {
+    .tarjetas {
       display: flex;
       justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
     }
-    .card {
+    .tarjeta {
       background: #e3f2fd;
       padding: 1.5rem;
       border-radius: 8px;
@@ -76,54 +76,49 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .why {
+    .porque {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 2rem;
       padding: 2rem;
     }
-    .why img {
+    .porque img {
       max-width: 400px;
       border-radius: 8px;
     }
-    .why ul {
+    .porque ul {
       list-style: none;
       padding: 0;
     }
-    .why ul li {
+    .porque ul li {
       margin-bottom: 1rem;
       font-weight: bold;
       color: #1565c0;
     }
 
     footer {
-    background: #0d47a1;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
     }
 
     .redes-sociales {
-    margin-top: 0.5rem;
+      margin-top: 0.5rem;
     }
 
     .redes-sociales a img {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
-    transition: transform 0.3s;
-    }
-
-    .redes-sociales a img:hover {
-    transform: scale(1.2);
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
     }
 
     @media (max-width: 768px) {
       nav ul { flex-direction: column; }
-      .hero h1 { font-size: 2rem; }
-      .cards { flex-direction: column; align-items: center; }
-      .why { flex-direction: column; text-align: center; }
+      .encabezado h1 { font-size: 2rem; }
+      .tarjetas { flex-direction: column; align-items: center; }
+      .porque { flex-direction: column; text-align: center; }
     }
   </style>
 </head>
@@ -140,30 +135,30 @@
     </nav>
   </header>
 
-  <section class="hero" id="inicio">
+  <section class="encabezado" id="inicio">
     <h1>Construye el futuro, respeta la tierra</h1>
     <button>Agenda una asesoría</button>
   </section>
 
-  <section id="servicios" class="section">
+  <section id="servicios" class="seccion">
     <h2>Nuestros Servicios</h2>
-    <div class="cards">
-      <div class="card">
+    <div class="tarjetas">
+      <div class="tarjeta">
         <h3>Auditoría Energética</h3>
         <p>Analizamos cuánta energía gasta tu hogar.</p>
       </div>
-      <div class="card">
+      <div class="tarjeta">
         <h3>Elección de Materiales</h3>
         <p>Te ayudamos a elegir maderas certificadas y aislantes naturales.</p>
       </div>
-      <div class="card">
+      <div class="tarjeta">
         <h3>Certificación Verde</h3>
         <p>Tramitamos sellos de sustentabilidad.</p>
       </div>
     </div>
   </section>
   
-  <section id="metodologia" class="why">
+  <section id="metodologia" class="porque">
     <img src="imagenes/images.jfif" alt="Arquitecto trabajando en planos">
     <div>
       <h2>¿Por qué elegirnos?</h2>
@@ -175,13 +170,14 @@
     </div>
   </section>
 
-<footer>
-  <p>Email: ecostruct@gmail.com</p>
-  <div class="redes-sociales">
-    <a href="#"><img src="imagenes/Logo_de_Facebook.png" alt="Facebook"></a>
-    <a href="#"><img src="imagenes/images (1).jpg" alt="Instagram"></a>
-    <a href="#"><img src="imagenes/WhatsApp_icon.png" alt="WhatsApp"></a>
-  </div>
-</footer>
+  <footer>
+    <p>Email: ecostruct@gmail.com</p>
+    <p>Teléfono: +59 94451 8927</p>
+    <div class="redes-sociales">
+      <a href="#"><img src="imagenes/Logo_de_Facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="imagenes/images (1).jpg" alt="Instagram"></a>
+      <a href="#"><img src="imagenes/WhatsApp_icon.png" alt="WhatsApp"></a>
+    </div>
+  </footer>
 </body>
 </html>
