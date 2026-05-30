@@ -113,7 +113,8 @@ footer {
     .tarjetas { flex-direction: column; align-items: center; }
     .porque { flex-direction: column; text-align: center; }
 }
-.modal {
+
+.ventana {
   display: none;
   position: fixed;
   z-index: 1000;
@@ -126,7 +127,7 @@ footer {
   justify-content: center;
 }
 
-.contenido-modal {
+.contenido-ventana {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 8px;
