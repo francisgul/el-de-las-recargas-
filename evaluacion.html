@@ -19,9 +19,31 @@
     </nav>
   </header>
 
-  <section class="encabezado" id="inicio">
+ <section class="encabezado" id="inicio">
     <h1>Construye el futuro, respeta la tierra</h1>
-    <button>Agenda una asesoría</button>
+    <button id="btn-abrir">Agenda una asesoría</button>
+    <div id="ventana-modal" class="modal">
+      <div class="contenido-modal">
+        
+        <span id="btn-cerrar" class="cerrar">&times;</span>
+        <form id="formulario-asesoria" class="formulario-inicio">
+          <h3>Agenda una asesoría</h3>
+          <div class="campo-inicio">
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
+          </div>
+          <div class="campo-inicio">
+            <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+          </div>
+          <div class="campo-inicio">
+            <input type="tel" id="telefono" name="telefono" required placeholder="Número de teléfono">
+          </div>
+          <div class="campo-inicio">
+            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu proyecto"></textarea>
+          </div>
+          <button type="submit">Enviar</button> 
+        </form>
+      </div>
+    </div>
   </section>
 
   <section id="servicios" class="seccion">
@@ -41,7 +63,6 @@
       </div>
     </div>
   </section>
-  
   <section id="metodologia" class="porque">
     <img src="imagenes/images.jfif" alt="Arquitecto trabajando en planos">
     <div>
@@ -53,7 +74,6 @@
       </ul>
     </div>
   </section>
-
   <footer id="contacto" class="redes-sociales">
     <p>Email: ecostruct@gmail.com</p>
     <p>Teléfono: +59 94451 8927</p>
@@ -63,5 +83,6 @@
       <a href="#"><img src="imagenes/WhatsApp_icon.png" alt="WhatsApp de EcoStruct"></a>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
